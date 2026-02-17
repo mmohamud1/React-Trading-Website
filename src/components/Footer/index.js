@@ -29,41 +29,52 @@ const Footer = () => {
     scroll.scrollToTop();
   };
 
+  const linkGroups = [
+    {
+      title: 'About Us',
+      links: ['How it works', 'Careers', 'Investors', 'Terms of service'],
+    },
+    {
+      title: 'Videos',
+      links: ['Submit Video', 'Ambassadors', 'Agency', 'Influencer'],
+    },
+    {
+      title: 'Contact Us',
+      links: ['Contact', 'Support', 'Destinations', 'Sponsorships'],
+    },
+    {
+      title: 'Our Approach',
+      links: ['Schemes', 'Donations', 'Partners', 'Insight'],
+    },
+  ];
+
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
+        <FooterLinksContainer role="navigation" aria-label="Footer links">
           <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/'>How it works</FooterLink>
-              <FooterLink to='/'>Careers</FooterLink>
-              <FooterLink to='/'>Investors</FooterLink>
-              <FooterLink to='/'>Terms of service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to='/'>Submit Video</FooterLink>
-              <FooterLink to='/'>Ambassadors</FooterLink>
-              <FooterLink to='/'>Agency</FooterLink>
-              <FooterLink to='/'>Influencer</FooterLink>
-            </FooterLinkItems>
+            {linkGroups.slice(0, 2).map((group) => (
+              <FooterLinkItems key={group.title}>
+                <FooterLinkTitle>{group.title}</FooterLinkTitle>
+                {group.links.map((link) => (
+                  <FooterLink to='/' key={link}>
+                    {link}
+                  </FooterLink>
+                ))}
+              </FooterLinkItems>
+            ))}
           </FooterLinksWrapper>
           <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to='/'>Contact</FooterLink>
-              <FooterLink to='/'>Support</FooterLink>
-              <FooterLink to='/'>Destinations</FooterLink>
-              <FooterLink to='/'>Sponsorships</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Our Appoach</FooterLinkTitle>
-              <FooterLink to='/'>Schemes</FooterLink>
-              <FooterLink to='/'>Donations</FooterLink>
-              <FooterLink to='/'>Partners</FooterLink>
-              <FooterLink to='/'>Insight</FooterLink>
-            </FooterLinkItems>
+            {linkGroups.slice(2).map((group) => (
+              <FooterLinkItems key={group.title}>
+                <FooterLinkTitle>{group.title}</FooterLinkTitle>
+                {group.links.map((link) => (
+                  <FooterLink to='/' key={link}>
+                    {link}
+                  </FooterLink>
+                ))}
+              </FooterLinkItems>
+            ))}
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
@@ -72,7 +83,7 @@ const Footer = () => {
               moTrade
             </SocialLogo>
             <WebsiteRights>
-              Created by Mohamed Mohamud &copy; 2020
+              Created by Mohamed Mohamud &copy; {new Date().getFullYear()}
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' aria-label='Facebook'>

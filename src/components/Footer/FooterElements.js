@@ -50,7 +50,7 @@ export const FooterLinkItems = styled.div`
   }
 `;
 
-export const FooterLinkTitle = styled.h1`
+export const FooterLinkTitle = styled.h2`
   font-size: 14px;
   margin-bottom: 16px;
 `;
@@ -64,6 +64,12 @@ export const FooterLink = styled(Link)`
   &:hover {
     color: #00b3ee;
     transition: 0.3s ease-out;
+  }
+
+  &:focus {
+    outline: 2px solid #00b3ee;
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 `;
 
@@ -115,5 +121,11 @@ export const SocialIconLink = styled.a`
   &:hover {
     color: #00b3ee;
     transition: 0.3s ease-out;
+  }
+
+  &:focus {
+    outline: 2px solid #00b3ee;
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 `;
