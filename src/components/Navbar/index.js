@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to='/' onClick={toggleHome}>
+            <NavLogo to="/" onClick={toggleHome}>
               moTrade
             </NavLogo>
             <MobileIcon onClick={toggle}>
@@ -50,11 +50,11 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to='about'
+                  to="about"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   About
@@ -62,11 +62,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='discover'
+                  to="discover"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   Discover
@@ -74,11 +74,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='services'
+                  to="services"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   Services
@@ -86,11 +86,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='signup'
+                  to="signup"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   Sign Up
@@ -98,7 +98,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+              <NavBtnLink to="/signin">Sign In</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

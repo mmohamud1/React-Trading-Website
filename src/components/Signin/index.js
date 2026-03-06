@@ -17,15 +17,15 @@ const Signin = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to='/'>moTrade</Icon>
+          <Icon to="/">moTrade</Icon>
           <FormContent>
-            <Form action='#'>
+            <Form action="#">
               <FormH1>Sign in to your account</FormH1>
-              <FormLabel htmlFor='for'>Email</FormLabel>
-              <FormInput type='email' required />
-              <FormLabel htmlFor='for'>Password</FormLabel>
-              <FormInput type='password' required />
-              <FormButton type='submit'>Continue</FormButton>
+              <FormLabel htmlFor="for">Email</FormLabel>
+              <FormInput type="email" required />
+              <FormLabel htmlFor="for">Password</FormLabel>
+              <FormInput type="password" required />
+              <FormButton type="submit">Continue</FormButton>
               <Text>Forgot password?</Text>
             </Form>
           </FormContent>
