@@ -57,7 +57,7 @@ const Footer = () => {
               <FooterLinkItems key={group.title}>
                 <FooterLinkTitle>{group.title}</FooterLinkTitle>
                 {group.links.map((link) => (
-                  <FooterLink to='/' key={link}>
+                  <FooterLink to="/" key={link}>
                     {link}
                   </FooterLink>
                 ))}
@@ -69,7 +69,7 @@ const Footer = () => {
               <FooterLinkItems key={group.title}>
                 <FooterLinkTitle>{group.title}</FooterLinkTitle>
                 {group.links.map((link) => (
-                  <FooterLink to='/' key={link}>
+                  <FooterLink to="/" key={link}>
                     {link}
                   </FooterLink>
                 ))}
@@ -79,26 +79,26 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/' onClick={toggleHome}>
+            <SocialLogo to="/" onClick={toggleHome}>
               moTrade
             </SocialLogo>
             <WebsiteRights>
               Created by Mohamed Mohamud &copy; {new Date().getFullYear()}
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href='/' aria-label='Facebook'>
+              <SocialIconLink href="/" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href='/' aria-label='Instagram'>
+              <SocialIconLink href="/" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='/' aria-label='Youtube'>
+              <SocialIconLink href="/" aria-label="Youtube">
                 <FaYoutube />
               </SocialIconLink>
-              <SocialIconLink href='/' aria-label='Twitter'>
+              <SocialIconLink href="/" aria-label="Twitter">
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href='/' aria-label='Linkedin'>
+              <SocialIconLink href="/" aria-label="Linkedin">
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
